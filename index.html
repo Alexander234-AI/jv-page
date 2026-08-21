@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>JV Partners | TikTok Reach & Visibility Guide</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #080808;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: auto;
+    }
+
+    /* NAVIGATION */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(8, 8, 8, 0.96);
+      border-bottom: 1px solid #2a2414;
+    }
+
+    .nav-inner {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      font-weight: 800;
+      color: #f4c95d;
+      letter-spacing: 0.3px;
+    }
+
+    .nav-cta {
+      background: #f4c95d;
+      color: #111;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-weight: 800;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 85px 0 70px;
+      text-align: center;
+      background:
+        radial-gradient(circle at top, rgba(244, 201, 93, 0.16), transparent 38%),
+        #080808;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid #6f5a24;
+      border-radius: 999px;
+      color: #f4c95d;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 72px);
+      line-height: 1.05;
+      max-width: 900px;
+      margin: 0 auto 22px;
+    }
+
+    .gold {
+      color: #f4c95d;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto 28px;
+      color: #c7c7c7;
+      font-size: 18px;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 22px;
+      border-radius: 10px;
+      font-weight: 800;
+      transition: transform 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: #f4c95d;
+      color: #111;
+    }
+
+    .btn-secondary {
+      border: 1px solid #665529;
+      color: #f4c95d;
+    }
+
+    /* STATS */
+    .stats {
+      padding: 25px 0 70px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .stat-card {
+      background: #101010;
+      border: 1px solid #2b2b2b;
+      border-radius: 16px;
+      padding: 25px 18px;
+      text-align: center;
+    }
+
+    .stat-card strong {
+      display: block;
+      color: #f4c95d;
+      font-size: clamp(25px, 4vw, 38px);
+      margin-bottom: 5px;
+    }
+
+    .stat-card span {
+      color: #bdbdbd;
+      font-size: 14px;
+    }
+
+    /* GENERAL SECTIONS */
+    section {
+      padding: 80px 0;
+    }
+
+    .section-label {
+      color: #f4c95d;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.15;
+      margin-bottom: 18px;
+    }
+
+    .section-intro {
+      max-width: 700px;
+      color: #c4c4c4;
+      margin-bottom: 35px;
+      font-size: 17px;
+    }
+
+    /* PRODUCT */
+    .product-box {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 35px;
+      align-items: center;
+      background: #101010;
+      border: 1px solid #302b1c;
+      border-radius: 20px;
+      padding: 30px;
+    }
+
+    .cover-placeholder {
+      min-height: 300px;
+      border-radius: 16px;
+      border: 1px dashed #80682a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px;
+      color: #f4c95d;
+      background: linear-gradient(145deg, #17140b, #0b0b0b);
+      font-weight: 800;
+      font-size: 20px;
+    }
+
+    .check-list {
+      list-style: none;
+      display: grid;
+      gap: 13px;
+      margin-top: 22px;
+    }
+
+    .check-list li {
+      color: #d5d5d5;
+    }
+
+    .check-list li::before {
+      content: "✓";
+      color: #f4c95d;
+      font-weight: 900;
+      margin-right: 10px;
+    }
+
+    /* BENEFITS */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: #101010;
+      border: 1px solid #292929;
+      border-radius: 16px;
+      padding: 25px;
+    }
+
+    .card-icon {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .card p {
+      color: #bcbcbc;
+      font-size: 15px;
+    }
+
+    /* HOW IT WORKS */
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .step {
+      position: relative;
+      background: #101010;
+      border: 1px solid #292929;
+      border-radius: 16px;
+      padding: 24px;
+    }
+
+    .step-number {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #f4c95d;
+      color: #111;
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    .step h3 {
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      color: #bcbcbc;
+      font-size: 15px;
+    }
+
+    /* SUPPORT */
+    .support-box {
+      background: linear-gradient(135deg, #17140b, #101010);
+      border: 1px solid #5e4d21;
+      border-radius: 20px;
+      padding: 35px;
+    }
+
+    .support-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .support-item {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid #302b1c;
+      border-radius: 12px;
+      padding: 18px;
+      color: #d4d4d4;
+    }
+
+    /* FAQ */
+    .faq {
+      display: grid;
+      gap: 12px;
+    }
+
+    details {
+      background: #101010;
+      border: 1px solid #292929;
+      border-radius: 12px;
+      padding: 18px 20px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 800;
+      color: #f1f1f1;
+    }
+
+    details p {
+      color: #bdbdbd;
+      padding-top: 13px;
+    }
+
+    /* FINAL CTA */
+    .final-cta {
+      text-align: center;
+      background:
+        radial-gradient(circle at center, rgba(244, 201, 93, 0.16), transparent 50%),
+        #0b0b0b;
+    }
+
+    .final-cta p {
+      color: #c4c4c4;
+      max-width: 650px;
+      margin: 0 auto 25px;
+      font-size: 17px;
+    }
+
+    footer {
+      border-top: 1px solid #242424;
+      padding: 28px 0;
+      text-align: center;
+      color: #777;
+      font-size: 14px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 800px) {
+      .stats-grid,
+      .cards,
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      .product-box {
+        grid-template-columns: 1fr;
+      }
+
+      .support-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 65px;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      .nav-inner {
+        min-height: 62px;
+      }
+    }
+    .guide-cover {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: auto;
+  border-radius: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="container nav-inner">
+      <a href="index.html" class="brand">ALEXANDER DIGITALS</a>
+      <a href="#join" class="nav-cta">Join as an Affiliate</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <span class="eyebrow">Affiliate / JV Opportunity</span>
+
+      <h1>
+        Promote the <span class="gold">TikTok Reach & Visibility Guide</span>
+        and Earn <span class="gold">₦1,500 Per Successful Sale</span>
+      </h1>
+
+      <p>
+        Join the affiliate campaign and promote a practical guide designed for
+        people who want to improve their understanding of TikTok reach,
+        visibility and content strategy.
+      </p>
+
+      <div class="hero-actions">
+        <!-- Replace # with your Stakecut affiliate link later -->
+        <a href="#join" class="btn btn-primary">Join the Campaign</a>
+        <a href="https://alexander234-ai.github.io/tiktok-reach-visibility-guide/" class="btn btn-secondary">View the Sales Page</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- KEY STATS -->
+  <div class="stats">
+    <div class="container stats-grid">
+      <div class="stat-card">
+        <strong>₦5,000</strong>
+        <span>Product Price</span>
+      </div>
+
+      <div class="stat-card">
+        <strong>30%</strong>
+        <span>Affiliate Commission</span>
+      </div>
+
+      <div class="stat-card">
+        <strong>₦1,500</strong>
+        <span>Commission Per Eligible Sale</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCT -->
+  <section>
+    <div class="container">
+      <div class="section-label">The Product</div>
+      <h2>What Will You Be Promoting?</h2>
+
+      <div class="product-box">
+        <img src="guide-cover.jpg" alt="TikTok Reach & Visibility Guide Cover" class="guide-cover">
+
+        <div>
+          <p class="section-intro">
+            The TikTok Reach &amp; Visibility Guide is a digital guide created
+            to help users better understand practical content and visibility
+            strategies they can apply while growing their TikTok presence.
+          </p>
+
+          <ul class="check-list">
+            <li>Practical and beginner-friendly information</li>
+            <li>Focused on TikTok reach and visibility</li>
+            <li>Designed for creators and people using TikTok for promotion</li>
+            <li>Delivered as a digital product</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY PROMOTE -->
+  <section>
+    <div class="container">
+      <div class="section-label">Why Promote?</div>
+      <h2>A Clear Offer for Your Audience</h2>
+      <p class="section-intro">
+        Here are some reasons the offer may be suitable for affiliates whose
+        audiences are interested in TikTok growth, content creation or online promotion.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">📱</div>
+          <h3>Relevant Topic</h3>
+          <p>
+            TikTok visibility and content strategy are topics that many creators
+            and online marketers are actively interested in learning about.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">💰</div>
+          <h3>Clear Commission</h3>
+          <p>
+            Earn 30% commission, which is ₦1,500 for each eligible ₦5,000 sale
+            attributed to your affiliate link.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🚀</div>
+          <h3>Ready Sales Page</h3>
+          <p>
+            You can direct interested people to a dedicated sales page created
+            specifically to explain the product and its offer.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section>
+    <div class="container">
+      <div class="section-label">How It Works</div>
+      <h2>Simple Affiliate Process</h2>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Join</h3>
+          <p>Register or apply through the official affiliate campaign link.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Get Your Link</h3>
+          <p>Use your approved affiliate link according to the platform's rules.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Promote</h3>
+          <p>Share the offer responsibly with people who may genuinely be interested.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>Earn Commission</h3>
+          <p>Receive commission for eligible sales tracked and approved by the platform.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUPPORT -->
+  <section>
+    <div class="container">
+      <div class="support-box">
+        <div class="section-label">Promotion Support</div>
+        <h2>Resources to Help You Promote Responsibly</h2>
+
+        <p class="section-intro">
+          Affiliates may receive promotional information and materials where available.
+          Always promote using accurate information and avoid misleading or guaranteed
+          income claims.
+        </p>
+
+        <div class="support-grid">
+          <div class="support-item">📄 Product information and key details</div>
+          <div class="support-item">🔗 Dedicated product sales page</div>
+          <div class="support-item">📝 Promotional copy ideas where available</div>
+          <div class="support-item">📱 Guidance on sharing the offer responsibly</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="container">
+      <div class="section-label">Questions</div>
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq">
+        <details>
+          <summary>How much commission do I earn?</summary>
+          <p>
+            The commission rate is 30%. On a ₦5,000 eligible sale, this equals ₦1,500.
+          </p>
+        </details>
+
+        <details>
+          <summary>Is commission guaranteed?</summary>
+          <p>
+            No. Commission depends on eligible sales being successfully tracked and
+            approved according to the affiliate platform's terms and rules.
+          </p>
+        </details>
+
+        <details>
+          <summary>Who is the product for?</summary>
+          <p>
+            The guide is intended for people interested in understanding TikTok reach,
+            visibility, content strategy and using TikTok for promotion.
+          </p>
+        </details>
+
+        <details>
+          <summary>Where do I send interested buyers?</summary>
+          <p>
+            You can direct interested people to the official sales page using your
+            approved affiliate link and following the platform's affiliate rules.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta" id="join">
+    <div class="container">
+      <div class="section-label">Ready to Promote?</div>
+
+      <h2>Join the Affiliate Campaign</h2>
+
+      <p>
+        If the product and audience are a good fit for your promotion strategy,
+        join through the official campaign link and review the platform terms
+        before promoting.
+      </p>
+
+      <!-- Replace # with your real Stakecut affiliate/JV link -->
+      <a href="#" class="btn btn-primary">Get Your Affiliate Link</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      © 2026 Alexander Digitals. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
